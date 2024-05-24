@@ -11,6 +11,16 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+install(DIRECTORY
+  launch
+  meshes
+  urdf
+  world
+  model
+  gazebo
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -22,5 +32,8 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env_hooks/mr_robot_gazebo.sh.in")
+
 
 ament_package()
