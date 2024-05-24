@@ -23,7 +23,16 @@ def generate_launch_description():
                 }.items()          
             )
     
+    #spawn robot with rviz
+    robot= IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_mr_robot_desc,'launch','robot.launch.py')
+        ),
+
+    )
+    
     return LaunchDescription([
-        gz_sim
+        gz_sim,
+        robot,
 
     ])

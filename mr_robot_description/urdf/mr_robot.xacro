@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.0 0.0 0.0035" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/lidar_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/lidar_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.0 0.0035" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/lidar_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/lidar_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="0.40035 -0.190925 0.0556" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/right_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/right_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.40035 -0.190925 0.0556" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/right_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/right_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="0.39965 0.182675 0.0556" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/left_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/left_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.39965 0.182675 0.0556" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mr_robot_description/meshes/left_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mr_robot_description)/meshes/left_wheel_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
